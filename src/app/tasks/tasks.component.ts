@@ -24,6 +24,10 @@ export class TasksComponent {
     this.isAddingTask = true;
   }
 
+  onCancelAddtask(){
+    this.isAddingTask = false;
+  }
+
   onCompleteTask(taskId:string){
     this.tasks = this.tasks.filter((task) => task.id !== taskId) 
   }
